@@ -29,7 +29,7 @@ class SHK_PT_panel(Panel):
         
 def object_poll(self,object):
     
-    return object.name in bpy.context.scene.sk_collection.objects and object.type == 'MESH'
+    return object.name in bpy.context.scene.sk_collection.objects and object.type == 'MESH' and object.data.shape_keys
     
         
 def register():
